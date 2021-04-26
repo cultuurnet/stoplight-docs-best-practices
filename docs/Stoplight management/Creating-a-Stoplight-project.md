@@ -2,7 +2,7 @@
 
 #### Step 1: Create a GitHub repository
 
-![](../assets/images/create-stoplight-project-step-1.png)
+![](../../assets/images/create-stoplight-project-step-1.png)
 
 1. Use a name that starts with `stoplight-docs-...`
 2. Add a clear description
@@ -10,7 +10,7 @@
 
 #### Step 2: Create your project on Stoplight
 
-![](../assets/images/create-stoplight-project-step-2.png)
+![](../../assets/images/create-stoplight-project-step-2.png)
 
 1. Select `Add from GitHub`
 2. Search by `stoplight-docs-`
@@ -19,7 +19,7 @@
 
 #### Step 3: Configure the project basics
 
-![](../assets/images/create-stoplight-project-step-3.png)
+![](../../assets/images/create-stoplight-project-step-3.png)
 
 In your Stoplight project's settings, the Project Basics will be prefilled with info based on your GitHub repository. However this should be cleaned up:
 
@@ -32,7 +32,7 @@ In your Stoplight project's settings, the Project Basics will be prefilled with 
 
 #### Step 4: Manage project access
 
-![](../assets/images/create-stoplight-project-step-4.png)
+![](../../assets/images/create-stoplight-project-step-4.png)
 
 In your Stoplight project's settings, adjust the access.
 
