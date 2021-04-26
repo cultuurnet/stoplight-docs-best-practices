@@ -6,7 +6,7 @@
 
 1. Use a name that starts with `stoplight-docs-...`
 2. Add a clear description
-3. Make sure to make the repository **private**
+3. Make sure to make the repository **public**, otherwise assets like images won't be accessible
 
 #### Step 2: Create your project on Stoplight
 
