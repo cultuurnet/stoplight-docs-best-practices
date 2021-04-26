@@ -2,17 +2,45 @@
 
 To document example HTTP requests or responses in Markdown files, use the [HTTP message format](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages) instead of `curl` examples.
 
-For example for a `GET` request:
+Additionally, make sure to indicate that your codeblock is a HTTP message by putting `http` after the backticks!
+
+#### GET example
 
 ```
+```http
+GET /path HTTP/1.1
+Host: https://example.com
+Accept: application/json
+\```
+```
+
+(Without `\` at the end)
+
+Becomes:
+
+```http
 GET /path HTTP/1.1
 Host: https://example.com
 Accept: application/json
 ```
 
-For example for a `POST` request:
+#### POST example
 
 ```
+```http
+POST /path HTTP/1.1
+Host: https://example.com
+Content-Type: application/json
+
+{"foo":"bar"}
+\```
+```
+
+(Without `\` at the end)
+
+Becomes:
+
+```http
 POST /path HTTP/1.1
 Host: https://example.com
 Content-Type: application/json
@@ -20,8 +48,22 @@ Content-Type: application/json
 {"foo":"bar"}
 ```
 
-For example for a `200` response:
+#### Response example
+
 ```
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"foo":"bar"}
+\```
+```
+
+(Without `\` at the end)
+
+Becomes:
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
