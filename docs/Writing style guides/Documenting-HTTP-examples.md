@@ -16,7 +16,7 @@ Accept: application/json
 
 (Without `\` at the end)
 
-Becomes:
+Becomes 👇
 
 ```http
 GET /path HTTP/1.1
@@ -38,7 +38,7 @@ Content-Type: application/json
 
 (Without `\` at the end)
 
-Becomes:
+Becomes 👇
 
 ```http
 POST /path HTTP/1.1
@@ -61,7 +61,7 @@ Content-Type: application/json
 
 (Without `\` at the end)
 
-Becomes:
+Becomes 👇
 
 ```http
 HTTP/1.1 200 OK
