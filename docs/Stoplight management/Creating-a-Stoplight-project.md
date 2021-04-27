@@ -8,6 +8,10 @@
 2. Add a clear description
 3. Make sure to make the repository **public**, otherwise assets like images won't be accessible
 
+**Also remember to give the _contributors_ and _external admins_ groups access to the repository!**
+
+![](../../assets/images/create-stoplight-project-step-1-access.png)
+
 #### Step 2: Create your project on Stoplight
 
 ![](../../assets/images/create-stoplight-project-step-2.png)
