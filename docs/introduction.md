@@ -12,4 +12,6 @@ Enjoy and go build some great APIs!
 
 > **Take your time to go through this documentation.** ☕️ It may seem easier to dive in and start designing and documenting your API as fast as possible, but these guides will ensure that your API is designed and documented in a way that will require far less changes down the line to make it production-ready.
 
+<!-- theme: info -->
+
 >  **Did you spot a mistake? Do you have questions or suggestions?** 💬 Do not hesitate to contact bert@publiq.be via email or Slack.
