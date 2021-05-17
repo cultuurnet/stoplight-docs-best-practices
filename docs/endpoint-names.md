@@ -1,6 +1,6 @@
-# Path names
+# Endpoint names
 
-This page explains how paths on publiq APIs should be named and structured.
+This page explains how endpoint paths on publiq APIs should be named and structured.
 
 publiq APIs follow the REST format. This means that your paths should be structured around resources and collections and you should avoid verbs to describe operations in path names by using the correct HTTP methods instead.
 
