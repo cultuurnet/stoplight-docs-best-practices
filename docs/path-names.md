@@ -1,4 +1,4 @@
-# Paths
+# Path names
 
 This page explains how paths on publiq APIs should be named and structured.
 
