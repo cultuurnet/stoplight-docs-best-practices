@@ -1,8 +1,6 @@
 # Sorting
 
-## Syntax
-
-### Multi-field sorting
+## Multiple fields
 
 Endpoints that support sorting based on multiple field names and order should use a `sort` query parameter with the following syntax:
 
@@ -12,7 +10,7 @@ Endpoints that support sorting based on multiple field names and order should us
 
 In the example above, the results would first be sorted by `field_name_1` in a `desc` order, and then by `field_name_2` in an `asc` order.
 
-### Single-field sorting
+## Single field
 
 Endpoints that only support sorting by a single field can also use the following simplified syntax:
 
@@ -32,4 +30,4 @@ Endpoints that only support sorting by a single field can also use the following
 
 ## Case sensitivity
 
-> The orders `asc` and `desc` MUST be case insensitive. So both `asc` or `ASC` should be accepted.
+> The orders `asc` and `desc` MUST be handled case insensitively. So both `asc` or `ASC` should be accepted.
