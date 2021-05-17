@@ -10,6 +10,6 @@ Additionally your filenames should be structured as URL slugs, not human-readabl
 - ❌ **Do not move** existing files to another directory once your project has become publicly accessible to avoid broken links
 
 > ##### Structure and names of pages in the sidebar
-> The structure of your files and folders also determines how your project's sidebar is structured by default. However, you can override this by **[customizing the sidebar](./customizing-the-sidebar.md)**. This way you can optimize your files and folders for URLs first, and still have control over how the sidebar is structured.
+> The structure of your files and folders also determines how your project's sidebar is structured by default. However, you can override this behavior by **[customizing the sidebar](./customizing-the-sidebar.md)**. This way you can optimize your files and folders for URLs first, and still have control over how the sidebar is structured.
 >
 > This is also the reason that it is advisable to keep the amount of folder levels to none or one at most, so you can still easily move pages around between sections in your sidebar without ending up with incorrect URLs (since you should never move or rename files after they have been publicly published).
