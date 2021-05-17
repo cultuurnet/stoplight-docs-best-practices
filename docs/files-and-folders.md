@@ -1,14 +1,18 @@
 # Files and folders
 
+The structure of the files and folders in your project directly corresponds to the URL structure of your pages. To ensure that we don't end up with broken URLs, we have collected a list of tips to keep your file and folder structure as durable as possible.
+
 ## Markdown files
 
-**The structure of the markdown files inside your `docs` directory directly translates to the URL that they will be accessible at.** For this reason it is advised to keep your file structure as simple as possible to avoid files being moved from one directory to another at some point, which would break existing links that have been shared with integrators or have been referenced inside our own documentation.
+It is advised to keep your file structure as simple as possible to avoid files being moved from one directory to another at some point, which would break existing links that have been shared with integrators or have been referenced inside our own documentation.
 
 Additionally your filenames should be structured as URL slugs, not human-readable text, to avoid hard-to-read links.
 
-- ✅ **Use lowercased slugs with dashes** as filenames, for example `good-example.md` instead of `Bad example.md`
-- ✅ **Store markdown files in the root of your docs directory**, for example `/docs/good-example.md` instead of `/docs/bad-example/avoid-this.md`
-- ❌ **Do not rename** existing files once your project has become publicly accessible to avoid broken links
+✅ **Use lowercased slugs with dashes** as filenames, for example `good-example.md` instead of `Bad example.md`
+
+✅ **Store markdown files as a flat list in the root of your docs directory**, for example `/docs/good-example.md` instead of `/docs/bad-example/avoid-this.md`
+
+❌ **Do not rename** existing files once your project has become publicly accessible to avoid broken links
 
 > ##### Structure and names of pages in the sidebar
 > The structure of your files and folders also determines how your project's sidebar is structured by default. So by following the tips above you will end up with a very badly ordered overview in your sidebar. 
@@ -24,7 +28,7 @@ Additionally your filenames should be structured as URL slugs, not human-readabl
 > ##### Exceptions
 > The rule about having no subdirectories is strongly encouraged advice, but not a hard rule. You might have a good reason to use (some) subdirectories after all in the `docs` folder of your project. If you do, **take great care to prepare the directory structure beforehand and keep it as minimal and simple as possible**.
 
-- ❌ If you do use subdirectories after all, **do not rename directories or move files** around after they have become publicly available
+❌ If you do use subdirectories after all, **do not rename directories or move files** around after they have become publicly available
 
 ## Images
 
