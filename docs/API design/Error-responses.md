@@ -4,7 +4,7 @@ The following document describes how error responses should be structured in JSO
 
 ## JSON body
 
-Error responses should always include a JSON body that confirms to [RFC7807](https://datatracker.ietf.org/doc/html/rfc7807), also known as a "problem detail".
+Error responses should always include a JSON body that conforms to [RFC7807](https://datatracker.ietf.org/doc/html/rfc7807), also known as a "problem detail".
 
 publiq APIs should use at least the 3 following properties defined by the standard:
 
