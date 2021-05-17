@@ -65,19 +65,15 @@ Use `403 Forbidden` when the request was correctly authenticated, but the authen
 
 Use `400 Bad request` when an invalid parameter name/value was included in the request, if the JSON included in the request body was invalid, etc.
 
-Use `404 Not found` **only** if the requested endpoint does not exist or an entity specified in a **path** parameter was not found.
+Use `404 Not found` **only** if the requested endpoint does not exist or an entity specified in the **path** was not found.
 
-For example, the event with id `7b9fbdfc-08be-4ddd-9f8f-151eb219e626` does not exist.
-
-Then the following `GET` should return a `404`:
+For example, given that the event with id `7b9fbdfc-08be-4ddd-9f8f-151eb219e626` does not exist, then the following `GET` should return a `404` because the path does not exist:
 
 ```
 GET /events/7b9fbdfc-08be-4ddd-9f8f-151eb219e626
 ```
 
-But the following `GET` should return a `400`:
+But the following `GET` should return a `400` because the `/calsum` path does exist, but the given `eventId` is invalid:
 ```
 GET /calsum?eventId=7b9fbdfc-08be-4ddd-9f8f-151eb219e626
 ```
-
-In the first example the endpoint (resource) itself was not found, while in the second example the endpoint exists but the supplied `eventId` parameter is incorrect (as the id does not exist).
