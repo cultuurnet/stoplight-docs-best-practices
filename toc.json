@@ -21,6 +21,11 @@
     },
     {
       "type": "item",
+      "title": "Endpoint methods",
+      "uri": "docs/endpoint-methods.md"
+    },
+    {
+      "type": "item",
       "title": "Error responses",
       "uri": "docs/error-responses.md"
     },

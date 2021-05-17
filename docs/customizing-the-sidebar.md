@@ -29,8 +29,8 @@ Here's how the `toc.json` for this project looks like (partially):
     },
     {
       "type": "item",
-      "title": "Path names",
-      "uri": "docs/path-names.md"
+      "title": "Endpoint names",
+      "uri": "docs/endpoint-names.md"
     },
     {
       "type": "item",
