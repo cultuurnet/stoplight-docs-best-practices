@@ -16,6 +16,11 @@
     },
     {
       "type": "item",
+      "title": "Getting started",
+      "uri": "docs/getting-started-with-api-design.md"
+    },
+    {
+      "type": "item",
       "title": "Endpoint names",
       "uri": "docs/endpoint-names.md"
     },
