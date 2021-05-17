@@ -7,7 +7,7 @@
 Additionally your filenames should be structured as URL slugs, not human-readable text, to avoid hard-to-read links.
 
 - ✅ **Use lowercased slugs with dashes** as filenames, for example `good-example.md` instead of `Bad example.md`
-- ✅ **Store markdown files in the root of your docs directory**, for example `/docs/good-example.md` instead of `/docs/bad-example/do-not-do-this.md`
+- ✅ **Store markdown files in the root of your docs directory**, for example `/docs/good-example.md` instead of `/docs/bad-example/avoid-this.md`
 - ❌ **Do not rename** existing files once your project has become publicly accessible to avoid broken links
 
 > ##### Structure and names of pages in the sidebar
