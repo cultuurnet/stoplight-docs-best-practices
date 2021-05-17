@@ -31,3 +31,9 @@ Additionally your filenames should be structured as URL slugs, not human-readabl
 As with Markdown files, your image assets should be stored in a **single directory level**. Ideally this would be `/assets/images` (the default in Stoplight). This way you drastically reduce the chances of accidentally ending up with broken images when images would inevitably be moved around directories. It also makes direct links to images (in email, chat, ...) more durable and less likely to break.
 
 The filenames of your images should also be structured as **URL slugs**, so `good-image-filename.png` instead of `Bad image filename.png`
+
+## Example
+
+If you follow the tips above, you should end up with a file structure that looks like this:
+
+![Example file structure](../assets/images/files-and-folders-structure-example.png)
