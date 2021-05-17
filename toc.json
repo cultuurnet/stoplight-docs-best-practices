@@ -35,7 +35,12 @@
     },
     {
       "type": "item",
-      "title": "HTTP examples",
+      "title": "Customizing the sidebar",
+      "uri": "docs/stoplight-management/customizing-the-sidebar.md"
+    },
+    {
+      "type": "item",
+      "title": "Documenting HTTP examples",
       "uri": "docs/writing-guides/http-examples.md"
     },
     {
@@ -46,11 +51,6 @@
       "type": "item",
       "title": "Creating a Stoplight project",
       "uri": "docs/stoplight-management/creating-a-stoplight-project.md"
-    },
-    {
-      "type": "item",
-      "title": "Customizing the sidebar",
-      "uri": "docs/stoplight-management/customizing-the-sidebar.md"
     }
   ]
 }
