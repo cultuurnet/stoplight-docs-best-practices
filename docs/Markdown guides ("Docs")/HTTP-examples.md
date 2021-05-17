@@ -4,7 +4,7 @@
 
 Don't document an example as a `curl` command. Instead, use the [HTTP message format](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
 
-`curl` examples are great for copy-pasting to try something out quickly in a terminal, but are hard to read if you want to do the HTTP request in another tool or programming language.
+`curl` examples are great for copy-pasting to try something out quickly in a terminal, but are hard to read if you want to perform the HTTP request in another tool or programming language.
 
 To make your example easy to try out, you can include a "try it" block using the [HTTP request maker functionality](https://meta.stoplight.io/docs/studio/docs/Documentation/03a-stoplight-flavored-markdown.md#http-request-maker) provided by Stoplight.
 
