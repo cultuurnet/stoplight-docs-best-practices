@@ -17,17 +17,17 @@
     {
       "type": "item",
       "title": "Paths",
-      "uri": "docs/api-design/paths.md"
+      "uri": "docs/paths.md"
     },
     {
       "type": "item",
       "title": "Error responses",
-      "uri": "docs/api-design/error-responses.md"
+      "uri": "docs/error-responses.md"
     },
     {
       "type": "item",
       "title": "Sorting",
-      "uri": "docs/api-design/sorting.md"
+      "uri": "docs/sorting.md"
     },
     {
       "type": "divider",
@@ -36,17 +36,17 @@
     {
       "type": "item",
       "title": "File management",
-      "uri": "docs/writing-guides/file-management.md"
+      "uri": "docs/file-management.md"
     },
     {
       "type": "item",
       "title": "Customizing the sidebar",
-      "uri": "docs/writing-guides/customizing-the-sidebar.md"
+      "uri": "docs/customizing-the-sidebar.md"
     },
     {
       "type": "item",
       "title": "Documenting HTTP examples",
-      "uri": "docs/writing-guides/http-examples.md"
+      "uri": "docs/http-examples.md"
     },
     {
       "type": "divider",
@@ -55,7 +55,7 @@
     {
       "type": "item",
       "title": "Creating a Stoplight project",
-      "uri": "docs/stoplight-management/creating-a-stoplight-project.md"
+      "uri": "docs/creating-a-stoplight-project.md"
     }
   ]
 }
