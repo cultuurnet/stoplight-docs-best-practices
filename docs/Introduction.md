@@ -6,4 +6,4 @@ This space is meant to share tips and best practices how to design and document 
 
 Additionally we also have some pages about creating new Stoplight projects and managing their settings, so that everything works as smoothly as possible for you and everyone helping to document your API.
 
-Enjoy and go write some great documentation!
+Enjoy and go build some great APIs!
