@@ -1,4 +1,4 @@
-# File management
+# Files and folders
 
 ## Markdown files
 
