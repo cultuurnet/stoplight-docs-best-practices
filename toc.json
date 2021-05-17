@@ -1,0 +1,56 @@
+{
+  "items": [
+    {
+      "type": "item",
+      "title": "Introduction",
+      "uri": "docs/introduction.md"
+    },
+    {
+      "type": "item",
+      "title": "How we work",
+      "uri": "docs/how-we-work.md"
+    },
+    {
+      "type": "divider",
+      "title": "API design"
+    },
+    {
+      "type": "item",
+      "title": "Paths",
+      "uri": "docs/api-design/paths.md"
+    },
+    {
+      "type": "item",
+      "title": "Error responses",
+      "uri": "docs/api-design/error-responses.md"
+    },
+    {
+      "type": "item",
+      "title": "Sorting",
+      "uri": "docs/api-design/sorting.md"
+    },
+    {
+      "type": "divider",
+      "title": "Writing guides"
+    },
+    {
+      "type": "item",
+      "title": "HTTP examples",
+      "uri": "docs/api-design/http-examples.md"
+    },
+    {
+      "type": "divider",
+      "title": "Stoplight Management"
+    },
+    {
+      "type": "item",
+      "title": "Creating a Stoplight project",
+      "uri": "docs/stoplight-management/creating-a-stoplight-project.md"
+    },
+    {
+      "type": "item",
+      "title": "Customizing the sidebar",
+      "uri": "docs/stoplight-management/customizing-the-sidebar.md"
+    }
+  ]
+}
