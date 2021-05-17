@@ -36,7 +36,7 @@
     {
       "type": "item",
       "title": "HTTP examples",
-      "uri": "docs/api-design/http-examples.md"
+      "uri": "docs/guides/http-examples.md"
     },
     {
       "type": "divider",
