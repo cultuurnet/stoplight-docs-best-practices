@@ -61,7 +61,7 @@ PUT /events/{eventId}/audience-type
 
 - Path names should be handled case-insensitively on the server
 - Always use lowercase in documentation of path names
-- Always use `-` to separate words in path names. Do not use `camelCase` for path names.
+- Always use `-` to separate words in path names. Do **not** use `camelCase` for path names.
 
 ## Path parameters
 
@@ -73,7 +73,7 @@ For example:
 GET /events/{eventId}/card-systems/{cardSystemId}
 ```
 
-## Trailing slashes
+## Trailing slashes `/`
 
 Paths on publiq APIs should never require a trailing slash, and should be documented without trailing slash.
 
