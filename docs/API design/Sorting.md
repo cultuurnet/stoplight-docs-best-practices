@@ -1,5 +1,9 @@
 # Sorting
 
+<!-- theme: danger -->
+
+> This guideline is still a work in progress and the syntax is not finalized yet!
+
 ## Syntax
 
 Endpoints that support sorting of multiple results based on field name(s) and order should use a `sort` query parameter with the following syntax:
