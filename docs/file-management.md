@@ -17,6 +17,13 @@ Additionally your filenames should be structured as URL slugs, not human-readabl
 >
 > This is also the reason that it is advisable to not use subdirectories inside `docs`, so you can still easily move pages around between sections in your sidebar without ending up with incorrect or broken URLs.
 
+<!-- theme: success -->
+
+> ##### Exceptions
+> The rule about having no subdirectories is strongly encouraged advice, but not a hard rule. You might have a good reason to use (some) subdirectories after all in the `docs` folder of your project. If you do, **take great care to prepare the directory structure beforehand and keep it as minimal and simple as possible**.
+
+- ❌ If you do use subdirectories after all, **do not rename directories or move files** around after they have become publicly available
+
 ## Images
 
 As with Markdown files, your image assets should be stored in a **single directory level**. Ideally this would be `/assets/images` (the default in Stoplight). This way you drastically reduce the chances of accidentally ending up with broken images when images would inevitably be moved around directories. It also makes direct links to images (in email, chat, ...) more durable and less likely to break.
