@@ -57,7 +57,7 @@ Endpoints that return an error response should always use a HTTP status in the 4
 
 ### 401 Unauthorized vs 403 Forbidden
 
-Use `401 Unauthorized` when a request should contain a bearer token but the token is missing or invalid.
+Use `401 Unauthorized` when a request should contain a bearer token but the token is missing, invalid, or **expired**.
 
 Use `403 Forbidden` when the request was correctly authenticated, but the authenticated user or client does not have sufficient permissions to perform the requested operation.
 
