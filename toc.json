@@ -35,6 +35,11 @@
     },
     {
       "type": "item",
+      "title": "File management",
+      "uri": "docs/writing-guides/file-management.md"
+    },
+    {
+      "type": "item",
       "title": "Customizing the sidebar",
       "uri": "docs/writing-guides/customizing-the-sidebar.md"
     },
