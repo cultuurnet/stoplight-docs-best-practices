@@ -16,8 +16,8 @@
     },
     {
       "type": "item",
-      "title": "Getting started",
-      "uri": "docs/getting-started-with-api-design.md"
+      "title": "Overview",
+      "uri": "docs/api-design.md"
     },
     {
       "type": "item",
