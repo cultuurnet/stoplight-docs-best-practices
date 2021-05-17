@@ -15,6 +15,8 @@ Additionally your filenames should be structured as URL slugs, not human-readabl
 >
 > However, you can override this behavior by **[customizing the sidebar](./customizing-the-sidebar.md)**. This way you can optimize your file structure for URLs first, and still have control over how the sidebar is structured visually.
 >
+> Manually structuring your sidebar might seem like a lot of work at first, but it is an investment that will allow a lot more flexibility down the line if you set it up from the start of your project!
+>
 > This is also the reason that it is advisable to not use subdirectories inside `docs`, so you can still easily move pages around between sections in your sidebar without ending up with incorrect or broken URLs.
 
 <!-- theme: success -->
