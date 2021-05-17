@@ -7,3 +7,5 @@ This space is meant to share tips and best practices how to design and document 
 Additionally we also have some pages about creating new Stoplight projects and managing their settings, so that everything works as smoothly as possible for you and everyone helping to document your API.
 
 Enjoy and go build some great APIs!
+
+> **Did you spot a mistake? Do you have questions or suggestions?** Contact bert@publiq.be via email or publiq's Slack!
