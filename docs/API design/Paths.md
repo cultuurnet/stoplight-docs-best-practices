@@ -4,7 +4,7 @@ This page explains how paths on publiq APIs should be named and structured.
 
 publiq APIs follow the REST format. This means that your paths should be structured around resources and collections and you should avoid verbs to describe operations in path names by using the correct HTTP methods instead.
 
-You can find a brief intro to REST [here](https://www.infoq.com/articles/rest-introduction/) if needed.
+You can find a brief intro to REST [here](https://www.infoq.com/articles/rest-introduction/) for more info.
 
 ## Predictability
 
