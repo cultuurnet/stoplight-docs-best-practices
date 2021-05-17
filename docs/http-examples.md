@@ -1,5 +1,7 @@
 # HTTP examples
 
+A lot of times your guides will include examples of HTTP requests and/or responses to illustrate API calls. To keep these examples in a consistent format, we have decided on a common standard which is documented here.
+
 ### ❌ curl examples
 
 Don't document an example as a `curl` command. Instead, use the [HTTP message format](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
