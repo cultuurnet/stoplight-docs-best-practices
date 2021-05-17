@@ -14,4 +14,4 @@ Enjoy and go build some great APIs!
 
 <!-- theme: info -->
 
->  **Did you spot a mistake? Do you have questions or suggestions?** 💬 Do not hesitate to contact bert@publiq.be via email or Slack.
+>  **Did you spot a mistake? Do you have questions or suggestions?** 💬 Do not hesitate to contact bert@publiq.be, the owner of the Stoplight tool at publiq, via email or Slack.
