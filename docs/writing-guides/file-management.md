@@ -8,4 +8,5 @@ Additionally your filenames should be structured as URL slugs, not human-readabl
 - ✅ Keep directory structures limited to **one level** at most inside `docs`, for example `/docs/my-guide.md` or `/docs/my-directory/my-guide.md`
 - ❌ Do not change the name of existing files or directories once your project has become publicly accessible to avoid broken links
 
-> The structure of your files and folders also determines how your project's sidebar looks by default. However, you can override this by **[customizing the sidebar](./customizing-the-sidebar.md)**. This way you can optimize your files and folders for URLs first, and still have control over how the sidebar is structured.
+> ##### Structure of pages in the sidebar
+> The structure of your files and folders also determines how your project's sidebar is structured by default. However, you can override this by **[customizing the sidebar](./customizing-the-sidebar.md)**. This way you can optimize your files and folders for URLs first, and still have control over how the sidebar is structured.
