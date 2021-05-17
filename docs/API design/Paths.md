@@ -1,5 +1,7 @@
 # Paths
 
+This page explains how paths on publiq APIs should be named and structured.
+
 ## Trailing slashes
 
 Paths on publiq APIs should never require a trailing slash, and should be documented without trailing slash.
