@@ -63,6 +63,11 @@ PUT /events/{eventId}/audience-type
 - Always use lowercase in documentation of path names
 - Always use `-` to separate words in path names. Do **not** use `camelCase` for path names.
 
+```
+GET /good-example
+GET /badExample
+```
+
 ## Path parameters
 
 If your path has variable parameters, you should describe them using `{camelCase}` in documentation.
