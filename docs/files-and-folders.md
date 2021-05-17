@@ -28,7 +28,9 @@ Additionally your filenames should be structured as URL slugs, not human-readabl
 > ##### Exceptions
 > The rule about having no subdirectories is strongly encouraged advice, but not a hard rule. You might have a good reason to use (some) subdirectories after all in the `docs` folder of your project. If you do, **take great care to prepare the directory structure beforehand and keep it as minimal and simple as possible**.
 
-❌ If you do use subdirectories after all, **do not rename directories or move files** around after they have become publicly available
+<!-- theme: danger -->
+
+> If you do use subdirectories after all, **do not rename directories or move files** around after they have become publicly available
 
 ## Images
 
