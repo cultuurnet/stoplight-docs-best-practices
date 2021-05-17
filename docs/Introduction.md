@@ -8,4 +8,4 @@ Additionally we also have some pages about creating new Stoplight projects and m
 
 Enjoy and go build some great APIs!
 
-> **Did you spot a mistake? Do you have questions or suggestions?** Contact bert@publiq.be via email or publiq's Slack!
+> **Did you spot a mistake? Do you have questions or suggestions?** Do not hesitate to contact bert@publiq.be via email or Slack.
