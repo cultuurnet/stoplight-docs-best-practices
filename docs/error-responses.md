@@ -24,6 +24,8 @@ For example:
 }
 ```
 
+> Note that since `type` is URI, it should use lowercase characters and hyphens (`kebab-case`) for casing.
+
 Additionally the standard allows for extra properties. Endpoints on publiq APIs that return an error response based on invalid data in a JSON body of a request should include an extra `jsonPointer` property that contains a [RFC6901](https://datatracker.ietf.org/doc/html/rfc6901) pointer to the problematic JSON property.
 
 For example given the JSON body:
