@@ -30,4 +30,4 @@ Endpoints that only support sorting by a single field can also use the following
 
 ## Case sensitivity
 
-> The orders `asc` and `desc` MUST be handled case insensitively. So both `asc` or `ASC` should be accepted.
+The orders `asc` and `desc` should be handled case insensitively. So both `asc` or `ASC` should be accepted.
