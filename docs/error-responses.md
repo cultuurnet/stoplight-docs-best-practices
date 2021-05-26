@@ -2,7 +2,7 @@
 
 The following document describes how error responses should be structured in JSON and what HTTP status codes should be used.
 
-## JSON body
+## Body
 
 Error responses should always include a JSON body that conforms to [RFC7807](https://datatracker.ietf.org/doc/html/rfc7807), also known as a "problem detail".
 
@@ -56,7 +56,7 @@ The error response can pinpoint the problematic property value like this:
 
 Error responses should always include a `Content-Type` header with a `application/problem+json` value.
 
-## Status codes
+## Status
 
 Endpoints that return an error response should always use a HTTP status in the 4XX-5XX range.
 
