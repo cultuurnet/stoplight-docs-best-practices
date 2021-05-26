@@ -60,25 +60,29 @@ Error responses should always include a `Content-Type` header with a `applicatio
 
 Endpoints that return an error response should always use a HTTP status in the 4XX-5XX range.
 
-### 401 Unauthorized vs 403 Forbidden
+### 401 Unauthorized
 
-Use `401 Unauthorized` when a request should contain a bearer token but the token is missing, invalid, or **expired**.
+Use `401 Unauthorized` when a request should contain a bearer token but the **token is missing, invalid, or expired**.
+
+### 403 Forbidden
 
 Use `403 Forbidden` when the request was correctly authenticated, but the authenticated user or client does not have sufficient permissions to perform the requested operation.
 
-### 400 Bad request vs 404 Not found
+### 400 Bad request
 
 Use `400 Bad request` when an invalid parameter name/value was included in the request, if the JSON included in the request body was invalid, etc.
 
+### 404 Not found
+
 Use `404 Not found` **only** if the requested endpoint does not exist or an entity specified in the **path** was not found.
 
-For example, given that the event with id `7b9fbdfc-08be-4ddd-9f8f-151eb219e626` does not exist, then the following `GET` should return a `404` because the path does not exist:
+For example, given that the event with id `7b9fbdfc-08be-4ddd-9f8f-151eb219e626` does not exist, then the following request should return a `404` because the path does not exist:
 
 ```
 GET /events/7b9fbdfc-08be-4ddd-9f8f-151eb219e626
 ```
 
-But the following `GET` should return a `400` because the `/calsum` path does exist, but the given `eventId` is invalid:
+But the following request should return a `400` because the `/calsum` path does exist, but the given `eventId` parameter value is invalid:
 ```
 GET /calsum?eventId=7b9fbdfc-08be-4ddd-9f8f-151eb219e626
 ```
