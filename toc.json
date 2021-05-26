@@ -26,6 +26,11 @@
     },
     {
       "type": "item",
+      "title": "Permissions",
+      "uri": "docs/permissions.md"
+    },
+    {
+      "type": "item",
       "title": "Endpoints",
       "uri": "docs/endpoints.md"
     },
