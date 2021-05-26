@@ -6,7 +6,9 @@ The following document describes how error responses should be structured in JSO
 
 Error responses should always include a JSON body that conforms to [RFC7807](https://datatracker.ietf.org/doc/html/rfc7807), also known as a "problem detail".
 
-publiq APIs should always include at least the 4 following properties defined by the standard:
+### Required properties
+
+Error responses from publiq APIs should always include at least the 4 following properties defined by the standard:
 
 - `type` - A URL used to identify the problem. It is encouraged that this URL points to a human-readable explanation of the error for developers
 - `title` - A short, human-readable summary of the problem type. (Should always be the same for the given `type`!)
@@ -26,7 +28,11 @@ For example:
 
 > Note that since `type` is a URI, it should use lowercase characters and hyphens (`kebab-case`) for casing.
 
-Additionally the standard allows for extra properties. Endpoints on publiq APIs that return an error response based on invalid data in a JSON body of a request should include an extra `jsonPointer` property that contains a [RFC6901](https://datatracker.ietf.org/doc/html/rfc6901) pointer to the problematic JSON property.
+Additionally the standard allows for extra properties. 
+
+### jsonPointer
+
+Endpoints on publiq APIs that return an error response based on invalid data in a JSON body of a request should include an extra `jsonPointer` property that contains a [RFC6901](https://datatracker.ietf.org/doc/html/rfc6901) pointer to the problematic JSON property.
 
 For example given the JSON body:
 
