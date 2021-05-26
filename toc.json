@@ -26,13 +26,8 @@
     },
     {
       "type": "item",
-      "title": "Endpoint names",
-      "uri": "docs/endpoint-names.md"
-    },
-    {
-      "type": "item",
-      "title": "Endpoint methods",
-      "uri": "docs/endpoint-methods.md"
+      "title": "Endpoints",
+      "uri": "docs/endpoints.md"
     },
     {
       "type": "item",

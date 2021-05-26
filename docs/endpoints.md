@@ -1,12 +1,18 @@
-# Endpoint names
+# Endpoints
 
-This page explains how endpoint paths on publiq APIs should be named and structured.
+This page explains how endpoints on publiq APIs should be named and structured.
 
 publiq APIs follow the REST format. This means that your paths should be structured around resources and collections and you should avoid verbs to describe operations in path names by using the correct HTTP methods instead.
 
 You can find a brief intro to REST [here](https://www.infoq.com/articles/rest-introduction/) for more info.
 
-## Predictability
+## Methods
+
+\[To be documented.\]
+
+## Names
+
+### Predictability
 
 The **#1 priority** in naming and structure of paths on publiq APIs is predictability, which is mostly achieved through consistency.
 
@@ -28,7 +34,7 @@ GET /event/{eventId}
 GET /card-systems/event/{eventId}
 ```
 
-## Singular vs Plural
+### Singular vs Plural
 
 Always use plural for endpoints or parts of your path that represent collections. Only use singular for endpoints that represent a singleton.
 
@@ -57,7 +63,7 @@ An endpoint that allows an update of the audience type of an event which can onl
 PUT /events/{eventId}/audience-type 
 ```
 
-## Casing
+### Casing
 
 - Path names should be handled case-insensitively on the server
 - Always use lowercase in documentation of path names
@@ -68,7 +74,7 @@ GET /good-example
 GET /badExample
 ```
 
-## Path parameters
+### Path parameters
 
 If your path has variable parameters, you should describe them using `{camelCase}` in documentation.
 
@@ -78,7 +84,7 @@ For example:
 GET /events/{eventId}/card-systems/{cardSystemId}
 ```
 
-## Trailing slashes `/`
+### Trailing slashes `/`
 
 Paths on publiq APIs should never require a trailing slash, and should be documented without trailing slash.
 
