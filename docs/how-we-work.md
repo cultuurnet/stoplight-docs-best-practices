@@ -14,6 +14,7 @@ Overview:
 
 Making changes to documentation
 
+- Tickets in a documentation Jira project?
 - PRs
 - Reviewer(s)
 - Automatic checks
