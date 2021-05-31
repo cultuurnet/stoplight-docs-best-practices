@@ -16,7 +16,15 @@ Create a GitHub repository inside the cultuurnet organization.
 
 ## Step 2
 
-Create your project on Stoplight
+Setup the CI for the new repository.
+
+Run the [configure-ci.sh script](https://github.com/cultuurnet/stoplight-ci#configure-cish) provided on GitHub inside a local clone of your newly created repository. This will automatically add a README, install the necessary packages for linting, configuration files for the linting tools, configuration for GitHub Actions, a pull request template, etc.
+
+> You will need npm 7+ and yarn to run the configure-ci.sh script
+
+## Step 3
+
+Create your project on Stoplight.
 
 ![](../assets/images/create-stoplight-project-step-2.png)
 
@@ -25,7 +33,7 @@ Create your project on Stoplight
 3.  Select your repository created in the previous step
 4.  Add your project to Stoplight
 
-## Step 3
+## Step 4
 
 Click the cog button (settings) in your project sidebar and configure the following settings:
 
@@ -38,7 +46,7 @@ Click the cog button (settings) in your project sidebar and configure the follow
 5.  If you want you can click on "pick a FoneAwesome icon" to go to a list of possible icons
 6.  Change the icon color to the brand color of the product
 
-## Step 4
+## Step 5
 
 Click the Share button in the sidebar of your project and configure your project's access:
 
