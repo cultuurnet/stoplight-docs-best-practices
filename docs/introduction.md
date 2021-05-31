@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to our internal API design and documentation guidelines! 👋 
+Welcome to our internal API design and documentation guidelines! 👋
 
 This space is meant to share tips and best practices how to design and document your API on Stoplight so that our approach is consistent across projects and as clear as possible for integrators. Click on a guide in the sidebar to find out more about how to take your design and documentation to the next level!
 
@@ -14,4 +14,4 @@ Enjoy and go build some great APIs!
 
 <!-- theme: info -->
 
->  **Did you spot a mistake? Do you have questions or suggestions?** 💬 Do not hesitate to contact bert@publiq.be, the owner of the Stoplight tool at publiq, via email or Slack.
+> **Did you spot a mistake? Do you have questions or suggestions?** 💬 Do not hesitate to contact bert@publiq.be, the owner of the Stoplight tool at publiq, via email or Slack.

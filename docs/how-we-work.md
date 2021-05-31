@@ -8,13 +8,13 @@ Looks like you reached a placeholder page! 🚧
 
 Overview:
 
-1. API design
-2. API implementation
-3. Guides
+1.  API design
+2.  API implementation
+3.  Guides
 
 Making changes to documentation
 
-- Tickets in a documentation Jira project?
-- PRs
-- Reviewer(s)
-- Automatic checks
+*   Tickets in a documentation Jira project?
+*   PRs
+*   Reviewer(s)
+*   Automatic checks

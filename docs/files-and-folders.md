@@ -15,7 +15,8 @@ Additionally your filenames should be structured as URL slugs, not human-readabl
 ❌ **Do not rename** existing files once your project has become publicly accessible to avoid broken links
 
 > ##### Structure and names of pages in the sidebar
-> The structure of your files and folders also determines how your project's sidebar is structured by default. So by following the tips above you will end up with a very badly ordered overview in your sidebar. 
+>
+> The structure of your files and folders also determines how your project's sidebar is structured by default. So by following the tips above you will end up with a very badly ordered overview in your sidebar.
 >
 > However, you can override this behavior by **[customizing the sidebar](./customizing-the-sidebar.md)**. This way you can optimize your file structure for URLs first, and still have control over how the sidebar is structured visually.
 >
@@ -26,6 +27,7 @@ Additionally your filenames should be structured as URL slugs, not human-readabl
 <!-- theme: success -->
 
 > ##### Exceptions
+>
 > The rule about having no subdirectories is strongly encouraged advice, but not a hard rule. You might have a good reason to use (some) subdirectories after all in the `docs` folder of your project. If you do, **take great care to prepare the directory structure beforehand and keep it as minimal and simple as possible**.
 
 <!-- theme: danger -->
