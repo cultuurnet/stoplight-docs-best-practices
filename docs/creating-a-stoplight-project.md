@@ -44,7 +44,7 @@ Additionally, in the main Options of your repository, check the following option
 
 Create your project on Stoplight.
 
-![](../assets/images/create-stoplight-project-step-2.png)
+![](../assets/images/create-stoplight-project-step-4.png)
 
 1.  Select `Add from GitHub`
 2.  Search by `stoplight-docs-`
@@ -55,7 +55,7 @@ Create your project on Stoplight.
 
 Click the cog button (settings) in your project sidebar and configure the following settings:
 
-![](../assets/images/create-stoplight-project-step-3.png)
+![](../assets/images/create-stoplight-project-step-5.png)
 
 1.  Change the name to the product's real name instead of the name of the git repository
 2.  Change the slug to the product's real name instead of the name of the git repository
@@ -68,7 +68,7 @@ Click the cog button (settings) in your project sidebar and configure the follow
 
 Click the Share button in the sidebar of your project and configure your project's access:
 
-![](../assets/images/create-stoplight-project-step-4.png)
+![](../assets/images/create-stoplight-project-step-6.png)
 
 In your Stoplight project's settings, adjust the access.
 
