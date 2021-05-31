@@ -30,15 +30,15 @@ Make PRs required to make changes.
 
 Make `master` a [protected branch](https://docs.github.com/en/github/administering-a-repository/defining-the-mergeability-of-pull-requests/about-protected-branches) inside your new GitHub repository, with the following settings:
 
-- [x] Require pull request reviews before merging
-- [x] Require status checks to pass before merging
-- [x] Require branches to be up to date before merging 
-- [x] Include administrators
-- [x] Restrict who can push to matching branches (*don't list any people*)
+*   **Require pull request reviews before merging**
+*   **Require status checks to pass before merging**
+*   **Require branches to be up to date before merging**
+*   **Include administrators**
+*   **Restrict who can push to matching branches** (*don't list any people*)
 
 Additionally, in the main Options of your repository, check the following options:
 
-- [x] Automatically delete head branches
+*   **Automatically delete head branches**
 
 ## Step 4
 
