@@ -12,6 +12,6 @@ Additionally, they **speed up development of our APIs** by reducing the time spe
 
 We try to follow industry standards where possible, but sometimes there are competing standards, or we have to deviate due to backward-compatibility reasons so we can align existing APIs with these standards.
 
-## Why does API *x* not follow the standards in reality?
+## Why does API *x* not follow the standards?
 
 Some APIs were built before these standards were agreed upon. When we add new standards, we try to look at existing APIs and make sure they are compatible with them or can be made compatible with them without too much effort. However this is not always possible, or the compatibility has yet to be added.
