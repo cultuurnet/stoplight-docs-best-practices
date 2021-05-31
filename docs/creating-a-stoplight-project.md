@@ -26,6 +26,22 @@ Make sure to commit and push the resulting changes afterward!
 
 ## Step 3
 
+Make PRs required to make changes.
+
+Make `master` a [protected branch](https://docs.github.com/en/github/administering-a-repository/defining-the-mergeability-of-pull-requests/about-protected-branches) inside your new GitHub repository, with the following settings:
+
+- [x] Require pull request reviews before merging
+- [x] Require status checks to pass before merging
+- [x] Require branches to be up to date before merging 
+- [x] Include administrators
+- [x] Restrict who can push to matching branches (*don't list any people*)
+
+Additionally, in the main Options of your repository, check the following options:
+
+- [x] Automatically delete head branches
+
+## Step 4
+
 Create your project on Stoplight.
 
 ![](../assets/images/create-stoplight-project-step-2.png)
@@ -35,7 +51,7 @@ Create your project on Stoplight.
 3.  Select your repository created in the previous step
 4.  Add your project to Stoplight
 
-## Step 4
+## Step 5
 
 Click the cog button (settings) in your project sidebar and configure the following settings:
 
@@ -48,7 +64,7 @@ Click the cog button (settings) in your project sidebar and configure the follow
 5.  If you want you can click on "pick a FoneAwesome icon" to go to a list of possible icons
 6.  Change the icon color to the brand color of the product
 
-## Step 5
+## Step 6
 
 Click the Share button in the sidebar of your project and configure your project's access:
 
