@@ -1,6 +1,8 @@
 # Creating a Stoplight project
 
-#### Step 1: Create a GitHub repository
+## Step 1
+
+Create a GitHub repository inside the cultuurnet organization.
 
 ![](../assets/images/create-stoplight-project-step-1.png)
 
@@ -12,7 +14,9 @@
 
 ![](../assets/images/create-stoplight-project-step-1-access.png)
 
-#### Step 2: Create your project on Stoplight
+## Step 2
+
+Create your project on Stoplight
 
 ![](../assets/images/create-stoplight-project-step-2.png)
 
@@ -21,11 +25,11 @@
 3.  Select your repository created in the previous step
 4.  Add your project to Stoplight
 
-#### Step 3: Configure the project basics
+## Step 3
+
+Click the cog button (settings) in your project sidebar and configure the following settings:
 
 ![](../assets/images/create-stoplight-project-step-3.png)
-
-In your Stoplight project's settings, the Project Basics will be prefilled with info based on your GitHub repository. However this should be cleaned up:
 
 1.  Change the name to the product's real name instead of the name of the git repository
 2.  Change the slug to the product's real name instead of the name of the git repository
@@ -34,12 +38,13 @@ In your Stoplight project's settings, the Project Basics will be prefilled with 
 5.  If you want you can click on "pick a FoneAwesome icon" to go to a list of possible icons
 6.  Change the icon color to the brand color of the product
 
-#### Step 4: Manage project access
+## Step 4
+
+Click the Share button in the sidebar of your project and configure your project's access:
 
 ![](../assets/images/create-stoplight-project-step-4.png)
 
 In your Stoplight project's settings, adjust the access.
 
-1.  Make sure to change the visibility from Private to something else if needed. A good initial visibility can be Internal, before the documentation is ready to go public.
-2.  Make sure to Save your new visibility
-3.  Add extra members to the project. By default only you will be able to make changes to it.
+1.  Add extra members to the project. By default only you will be able to make changes to it.
+2.  Optionally you can change the visibility to Internal or Public. However a new project should start as Private and only change visibility once it's ready.
