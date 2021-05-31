@@ -20,6 +20,8 @@ Setup the CI for the new repository.
 
 Run the [configure-ci.sh script](https://github.com/cultuurnet/stoplight-ci#configure-cish) provided on GitHub inside a local clone of your newly created repository. This will automatically add a README, install the necessary packages for linting, configuration files for the linting tools, configuration for GitHub Actions, a pull request template, etc.
 
+Make sure to commit and push the resulting changes afterward!
+
 > You will need npm 7+ and yarn to run the configure-ci.sh script
 
 ## Step 3
