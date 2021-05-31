@@ -8,7 +8,7 @@ You can find a brief intro to REST [here](https://www.infoq.com/articles/rest-in
 
 ## Methods
 
-\[To be documented.\]
+\[To be documented.]
 
 ## Names
 
@@ -20,19 +20,15 @@ When deciding on the name and structure of a new path, try to keep existing and 
 
 **✅ Example of predictable paths**
 
-```
-GET /events
-GET /events/{eventId}
-GET /events/{eventId}/card-systems
-```
+    GET /events
+    GET /events/{eventId}
+    GET /events/{eventId}/card-systems
 
 **❌ Example of unpredictable paths**
 
-```
-GET /events
-GET /event/{eventId}
-GET /card-systems/event/{eventId}
-```
+    GET /events
+    GET /event/{eventId}
+    GET /card-systems/event/{eventId}
 
 ### Singular vs Plural
 
@@ -41,38 +37,33 @@ Always use plural for endpoints or parts of your path that represent collections
 **✅ Pluralize collections**
 
 A collection:
-```
-GET /events
-```
+
+    GET /events
 
 An endpoint that returns a single resource, but is part of a higher-level collection:
-```
-GET /events/{eventId} 
-```
+
+    GET /events/{eventId} 
 
 **✅ Use singular for singletons**
 
 An endpoint that returns info about the current user (based on a token in the request):
 
-```
-GET /user
-```
+    GET /user
 
 An endpoint that allows an update of the audience type of an event which can only hold a single value:
-```
-PUT /events/{eventId}/audience-type 
-```
+
+    PUT /events/{eventId}/audience-type 
 
 ### Casing
 
-- Path names must be handled case-insensitively on the server
-- Always use lowercase in documentation of path names
-- Always use `-` to separate words in path names. Do **not** use `camelCase` for path names.
+*   Path names must be handled case-insensitively on the server
+*   Always use lowercase in documentation of path names
+*   Always use `-` to separate words in path names. Do **not** use `camelCase` for path names.
 
-```
-GET /good-example
-GET /badExample
-```
+<!---->
+
+    GET /good-example
+    GET /badExample
 
 ### Path parameters
 
@@ -80,9 +71,7 @@ If your path has variable parameters, you must describe them using `{camelCase}`
 
 For example:
 
-```
-GET /events/{eventId}/card-systems/{cardSystemId}
-```
+    GET /events/{eventId}/card-systems/{cardSystemId}
 
 ### Trailing slashes `/`
 
