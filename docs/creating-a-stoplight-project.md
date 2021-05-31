@@ -1,6 +1,6 @@
 # Creating a Stoplight project
 
-## Step 1
+## Create a GitHub repository
 
 Create a GitHub repository inside the cultuurnet organization.
 
@@ -14,9 +14,9 @@ Create a GitHub repository inside the cultuurnet organization.
 
 ![](../assets/images/create-stoplight-project-step-1-access.png)
 
-## Step 2
+## Setup CI
 
-Setup the CI for the new repository.
+Setup the CI for the new repository. This will help to prevent common mistakes like dead links inside your Markdown files etc.
 
 Run the [configure-ci.sh script](https://github.com/cultuurnet/stoplight-ci#configure-cish) provided on GitHub inside a local clone of your newly created repository. This will automatically add a README, install the necessary packages for linting, configuration files for the linting tools, configuration for GitHub Actions, a pull request template, etc.
 
@@ -24,7 +24,7 @@ Make sure to commit and push the resulting changes afterward!
 
 > You will need npm 7+ and yarn to run the configure-ci.sh script
 
-## Step 3
+## Configure repository settings
 
 Make PRs required to make changes.
 
@@ -40,7 +40,7 @@ Additionally, in the main Options of your repository, check the following option
 
 *   **Automatically delete head branches**
 
-## Step 4
+## Create a Stoplight project
 
 Create your project on Stoplight.
 
@@ -51,7 +51,7 @@ Create your project on Stoplight.
 3.  Select your repository created in the previous step
 4.  Add your project to Stoplight
 
-## Step 5
+## Configure the Stoplight project
 
 Click the cog button (settings) in your project sidebar and configure the following settings:
 
@@ -64,7 +64,7 @@ Click the cog button (settings) in your project sidebar and configure the follow
 5.  If you want you can click on "pick a FoneAwesome icon" to go to a list of possible icons
 6.  Change the icon color to the brand color of the product
 
-## Step 6
+## Change the Stoplight project visibility
 
 Click the Share button in the sidebar of your project and configure your project's access:
 
@@ -74,3 +74,7 @@ In your Stoplight project's settings, adjust the access.
 
 1.  Add extra members to the project. By default only you will be able to make changes to it.
 2.  Optionally you can change the visibility to Internal or Public. However a new project should start as Private and only change visibility once it's ready.
+
+## Done 🎉
+
+You're done!
