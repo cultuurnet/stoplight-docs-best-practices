@@ -1,4 +1,4 @@
-# Error responses
+# Errors
 
 The following document describes how error responses have to be structured in JSON and what HTTP status codes should be used.
 
