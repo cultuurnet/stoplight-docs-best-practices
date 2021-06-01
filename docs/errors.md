@@ -30,6 +30,14 @@ The `type` should always start with `https://api.publiq.be/probs`. If the error 
 
 > Note that since `type` is a URI, it has to use lowercase characters and hyphens (`kebab-case`) for casing.
 
+<!-- theme: success -->
+
+> #### Existing types 
+>
+> We have lists with [types for common errors](https://publiq.stoplight.io/docs/errors). These can be used as a fallback when you do not have a more specific type in your own API for a given error.
+>
+> Additionally we have some types for [authentication errors](https://publiq.stoplight.io/docs/authentication/docs/errors.md), which you are **required** to use when returning a 401 or 403.
+
 Additionally the standard allows for extra, custom properties. Below is a list of commonly used extra properties on publiq APIs.
 
 ### Extra properties
