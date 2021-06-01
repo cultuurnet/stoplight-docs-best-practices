@@ -38,9 +38,9 @@ The `type` should always start with `https://api.publiq.be/probs`. If the error 
 >
 > Additionally we have some types for [authentication errors](https://publiq.stoplight.io/docs/authentication/docs/errors.md), which you are **required** to use when returning a 401 or 403.
 
-Additionally the standard allows for extra, custom properties. Below is a list of commonly used extra properties on publiq APIs.
-
 ### Extra properties
+
+The RFC7807 standard allows for extra, custom properties. Below is a list of commonly used extra properties on publiq APIs.
 
 #### jsonPointer
 
