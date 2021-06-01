@@ -36,8 +36,8 @@
     },
     {
       "type": "item",
-      "title": "Error responses",
-      "uri": "docs/error-responses.md"
+      "title": "Errors",
+      "uri": "docs/errors.md"
     },
     {
       "type": "item",
