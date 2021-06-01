@@ -26,6 +26,8 @@ For example:
 }
 ```
 
+The `type` should always start with `https://api.publiq.be/probs`. If the error is specific to your API, it should then be followed by the slug of your API (same as in its scope), for example `/uitpas`. Everything after that can be structured as you want for your API.
+
 > Note that since `type` is a URI, it has to use lowercase characters and hyphens (`kebab-case`) for casing.
 
 Additionally the standard allows for extra, custom properties. Below is a list of commonly used extra properties on publiq APIs.
