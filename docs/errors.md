@@ -78,9 +78,17 @@ Or alternatively, if the endpoint uses client identification, if **the client id
 
 If the token or client id is valid but is missing the required scope to access this particular API, use 403.
 
+<!-- theme: warning -->
+
+> 401 responses **must** use the <https://api.publiq.be/probs/auth/unauthorized> problem detail type.
+
 ### 403 Forbidden
 
 Use `403 Forbidden` when the request was correctly authenticated, but the authenticated user or client does not have sufficient permissions to perform the requested operation or to access the API.
+
+<!-- theme: warning -->
+
+> 403 responses **must** use the <https://api.publiq.be/probs/auth/forbidden> problem detail type.
 
 ### 400 Bad request
 
