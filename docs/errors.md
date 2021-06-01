@@ -40,7 +40,7 @@ The `type` should always start with `https://api.publiq.be/probs`. If the error 
 
 ### Extra properties
 
-The RFC7807 standard allows for extra, custom properties. Below is a list of commonly used extra properties on publiq APIs.
+The RFC7807 standard allows for [extra, custom properties](https://datatracker.ietf.org/doc/html/rfc7807#section-3.2). Below is a list of commonly used extra properties on publiq APIs.
 
 #### jsonPointer
 
