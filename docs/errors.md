@@ -1,4 +1,4 @@
-# Error responses
+# Errors
 
 The following document describes how error responses have to be structured in JSON and what HTTP status codes should be used.
 
@@ -26,11 +26,21 @@ For example:
 }
 ```
 
+The `type` should always start with `https://api.publiq.be/probs`. If the error is specific to your API, it should then be followed by the slug of your API (same as in its scope), for example `/uitpas`. Everything after that can be structured as you want for your API.
+
 > Note that since `type` is a URI, it has to use lowercase characters and hyphens (`kebab-case`) for casing.
 
-Additionally the standard allows for extra, custom properties. Below is a list of commonly used extra properties on publiq APIs.
+<!-- theme: success -->
 
-### Extra properties
+> #### Existing types 
+>
+> We have lists with [types for common errors](https://publiq.stoplight.io/docs/errors). These can be used as a fallback when you do not have a more specific type in your own API for a given error.
+>
+> Additionally we have some types for [authentication errors](https://publiq.stoplight.io/docs/authentication/docs/errors.md), which you are **required** to use when returning a 401 or 403.
+
+### Extensions
+
+The RFC7807 standard allows for [extra, custom properties](https://datatracker.ietf.org/doc/html/rfc7807#section-3.2) (*"extensions"*). Below is a list of commonly used extra properties on publiq APIs.
 
 #### jsonPointer
 
@@ -76,9 +86,17 @@ Or alternatively, if the endpoint uses client identification, if **the client id
 
 If the token or client id is valid but is missing the required scope to access this particular API, use 403.
 
+<!-- theme: warning -->
+
+> 401 responses **must** use the `https://api.publiq.be/probs/auth/unauthorized` problem detail type.
+
 ### 403 Forbidden
 
 Use `403 Forbidden` when the request was correctly authenticated, but the authenticated user or client does not have sufficient permissions to perform the requested operation or to access the API.
+
+<!-- theme: warning -->
+
+> 403 responses **must** use the `https://api.publiq.be/probs/auth/forbidden` problem detail type.
 
 ### 400 Bad request
 
