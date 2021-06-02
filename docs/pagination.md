@@ -2,7 +2,7 @@
 
 API endpoints that return large lists of data should use pagination to limit responses to acceptable sizes and prevent memory issues on the API's server.
 
-To make pagination logic to re-use for integrators across our APIs, we have agreed on a common approach to implement across our APIs.
+To make pagination logic easy to re-use for integrators across our APIs, we have agreed on a common approach to implement across our APIs.
 
 At the time of writing, there is no official RFC for pagination on APIs, so we have agreed on a custom internal standard based on Search API v3's existing pagination logic.
 
