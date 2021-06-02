@@ -76,7 +76,7 @@ An endpoint that allows an update of the audience type of an event which can onl
 
 *   Path names must be handled case-insensitively on the server
 *   Always use lowercase in documentation of path names
-*   Always use `-` to separate words in path names. Do **not** use `camelCase` for path names.
+*   Always use `kebab-case` to separate words in path names. Do **not** use `lowerCamelCase` for path names.
 
 <!---->
 
@@ -85,7 +85,7 @@ An endpoint that allows an update of the audience type of an event which can onl
 
 ### Path parameters
 
-If your path has variable parameters, you must describe them using `{camelCase}` in documentation.
+If your path has variable parameters, you must describe them using `{lowerCamelCase}` in documentation.
 
 For example:
 
@@ -96,3 +96,7 @@ For example:
 Paths on publiq APIs must never require a trailing slash, and have to be documented without trailing slash.
 
 If a trailing slash is included in the request URL, ideally the API should ignore it and handle the request as if it did not include a trailing slash.
+
+## Query parameters
+
+Query parameters should use `lowerCamelCase` as casing. For example `?clientId=...`
