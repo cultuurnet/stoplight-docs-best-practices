@@ -88,7 +88,7 @@ If the token or client id is valid but is missing the required scope to access t
 
 <!-- theme: warning -->
 
-> 401 responses **must** use the <https://api.publiq.be/probs/auth/unauthorized> problem detail type.
+> 401 responses **must** use the `https://api.publiq.be/probs/auth/unauthorized` problem detail type.
 
 ### 403 Forbidden
 
@@ -96,7 +96,7 @@ Use `403 Forbidden` when the request was correctly authenticated, but the authen
 
 <!-- theme: warning -->
 
-> 403 responses **must** use the <https://api.publiq.be/probs/auth/forbidden> problem detail type.
+> 403 responses **must** use the `https://api.publiq.be/probs/auth/forbidden` problem detail type.
 
 ### 400 Bad request
 
