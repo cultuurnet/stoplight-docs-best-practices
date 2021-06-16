@@ -35,15 +35,15 @@ Examples of acceptable exceptions include endpoints like `/user` that provide in
 
 To validate a token, check that:
 
-- The signature can be verified with the public key of our Auth0 tenant
-- The `nbf` claim is in the past
-- The `exp` claim is **not** in the past
-- The `aud` claim is equal to `https://api.publiq.be`
-- The `iss` claim is equal to either (depending on what environment your API is running on):
-  - `https://publiq-acc.eu.auth0.com/`
-  - `https://publiq-test.eu.auth0.com/`
-  - `https://publiq.eu.auth0.com/` 
-- The `https://publiq.be/publiq-apis` claim is present and contains a value representing your api
+-   The signature can be verified with the public key of our Auth0 tenant
+-   The `nbf` claim is in the past
+-   The `exp` claim is **not** in the past
+-   The `aud` claim is equal to `https://api.publiq.be`
+-   The `iss` claim is equal to either (depending on what environment your API is running on):
+    -   `https://publiq-acc.eu.auth0.com/`
+    -   `https://publiq-test.eu.auth0.com/`
+    -   `https://publiq.eu.auth0.com/` 
+-   The `https://publiq.be/publiq-apis` claim is present and contains a value representing your api
 
 If the token has an invalid signature, is not usable yet, is expired, or has an invalid `aud` or `iss` claim you should return a [401 error (see authentication docs)](https://publiq.stoplight.io/docs/authentication/docs/errors.md#unauthorized)
 
@@ -79,14 +79,14 @@ The user will see a list of permissions that they are granting the client the fi
 
 Suitable (fictional) examples of scopes could be:
 
-- Reading a user's events (`events:read`)
-- Updating a user's events (`events:update`)
-- Deleting a user's events (`events:delete`)
-- Reading a user's recommendations (`recommendations:read`)
-- Reading a user's likes (`likes:read`)
-- Updating a user's likes (`likes:update`)
-- Reading a user's newsletter subscriptions (`newsletters:read`)
-- Updating a user's newsletter subscriptions (`newsletters:update`)
+-   Reading a user's events (`events:read`)
+-   Updating a user's events (`events:update`)
+-   Deleting a user's events (`events:delete`)
+-   Reading a user's recommendations (`recommendations:read`)
+-   Reading a user's likes (`likes:read`)
+-   Updating a user's likes (`likes:update`)
+-   Reading a user's newsletter subscriptions (`newsletters:read`)
+-   Updating a user's newsletter subscriptions (`newsletters:update`)
 
 > At the time of writing, no publiq APIs actually use scopes yet for this purpose. Do not use it if the granular access is not really needed _and_ the user needs to be able to grant them themself. This section just covers the intended use of scopes, _if_ you need them.
 
