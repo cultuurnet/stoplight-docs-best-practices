@@ -40,9 +40,9 @@ To validate a token, check that:
 -   The `exp` claim is **not** in the past
 -   The `aud` claim is equal to `https://api.publiq.be`
 -   The `iss` claim is equal to either (depending on what environment your API is running on):
-    -   `https://publiq-acc.eu.auth0.com/`
-    -   `https://publiq-test.eu.auth0.com/`
-    -   `https://publiq.eu.auth0.com/` 
+    -   `https://account.uitid.be/`
+    -   `https://account-test.uitid.be/`
+    -   `https://account-acc.uitid.be/`
 -   The `https://publiq.be/publiq-apis` claim is present and contains a value representing your api
 
 If the token has an invalid signature, is not usable yet, is expired, or has an invalid `aud` or `iss` claim you should return a [401 error (see authentication docs)](https://publiq.stoplight.io/docs/authentication/docs/errors.md#unauthorized)
