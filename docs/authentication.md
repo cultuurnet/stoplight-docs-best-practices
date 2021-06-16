@@ -66,11 +66,17 @@ If the specific client or user cannot perform a requested action, you should ret
 
 ## Scopes
 
-Scopes should only be used for granting access to resources on an API if those resources belong to a specific user and that user should determine if a client can access them or not.
+<!-- theme: warning -->
 
-The user will see a list of permissions that they are granting the client the first time after they login on Auth0 with that specific (3rd party) client.
+> Generally, scopes should not be used for determining access to or permissions on a publiq API. This section describes the only valid use case we see for scopes. If you intend to use scopes for something else, consider another solution.
+
+Scopes should only ever be used for granting access to resources on an API if those resources belong to a specific user and that user should determine if a client can access them or not.
+
+The reason for this is that end-users will see a list of permissions that they are granting the client the first time after they login on Auth0 with that specific (3rd party) client. So using scopes for granting access or permissions effectively moves the decision of granting a client access from publiq to the end-users.
 
 ![An example screenshot of the screen that the user will see after logging in for the first time through a client that requests scopes.](https://images.ctfassets.net/cdy7uua7fh8z/1te4FYRbu0aFcdohdXY2Rv/116bed5515eb2114c39374fb0a258912/consent-screen.png)
+
+If you want to give this decision making to the end-users of your API, you can use scopes but should **also** still implement the API access checks described in the sections above so 3rd party clients can go through an approval process. This way we still maintain control over what 3rd party clients can access which APIs, while end users can gain some additional control over what information a client can access in their situation.
 
 Suitable (fictional) examples of scopes could be:
 
@@ -83,7 +89,7 @@ Suitable (fictional) examples of scopes could be:
 -   Reading a user's newsletter subscriptions (`newsletters:read`)
 -   Updating a user's newsletter subscriptions (`newsletters:update`)
 
-> At the time of writing, no publiq APIs actually use scopes yet for this purpose. Do not use it if the granular access is not really needed _and_ the user needs to be able to grant them themself. This section just covers the intended use of scopes, _if_ you need them.
+> At the time of writing, no publiq APIs actually use scopes yet for this purpose. Only consider using scopes if granular access to a user's resources is required, _and_ the user needs to be able to grant them themself.
 
 <!-- theme: danger -->
 
