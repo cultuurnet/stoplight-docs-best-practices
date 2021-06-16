@@ -16,16 +16,14 @@ For example a client can have the following metadata:
       "client_id": "AaiyAPdpYdesoKnqjj8HJqRn4T5titww",
       ...
       "client_metadata": {
-        "uitpas": "false",
-        "sapi3": "true",
-        "entryapi3": "false",
+        "publiq-apis": "ups sapi entry"
         ...
       }
     }
 
-The above example indicates that the client has access to UiTdatabank's Search API, but not the UiTPAS API or UiTdatabank's Entry API.
+The above example indicates that the client has access to UiTdatabank's Search API, the UiTPAS API, and UiTdatabank's Entry API.
 
-Note that the `client_metadata` can also contain other, unrelated properties. If the property for your API is missing, it is considered to be `false`. Make sure to always check that the value of the property is `true`.
+> We use very short names for the APIs in the client metadata, because the `publiq-apis` property is limited to 255 characters. We also cannot use multiple properties because the metadata is limited to 10 properties.
 
 ## Token guidelines
 
@@ -49,19 +47,16 @@ If the token has an invalid signature, is not usable yet, is expired, or has an 
 
 If the token is not usable on your API, you should return a [403 error (see authentication docs)](https://publiq.stoplight.io/docs/authentication/docs/errors.md#forbidden). (The difference with the other checks being that the token is valid on _some_ of our APIs, but forbidden on your specific API.)
 
-The values inside the `https://publiq.be/publiq-apis` claim are the keys that are also stored in the client metadata. For example a token can have the following claims:
+The value of the `https://publiq.be/publiq-apis` claim is the same as the one in the client metadata of the client that requested the token. For example:
 
     {
       "sub": "auth0|...",
       "aud": "https://api.publiq.be",
       ...
-      "https://publiq.be/publiq-apis": [
-        "uitpas",
-        "sapi3"
-      ]
+      "https://publiq.be/publiq-apis": "ups sapi"
     }
 
-Note that the claim can be missing, in which case it is considered to be empty. If it is present it can contain 0, 1, or multiple values.
+The example above indicates that the token is usable on the UiTPAS API and UiTdatabank's Search API. Note that the claim can be missing, in which case it is considered to be empty.
 
 ## Permissions
 
