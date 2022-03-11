@@ -2,9 +2,7 @@
 
 Welcome to publiq's API design and documentation guidelines! 👋
 
-Our platform is a collection of products like UiTdatabank and UiTPAS, each with their own Application Programming Interfaces (APIs) that enable integrations with external applications as well as our own.
-
-## Goal
+This space is meant to share best practices that should be followed for every API that is developed within our organization.
 
 Many of publiq's partners integrate with not only one, but multiple of our APIs. Additionally a lot of our own applications that are built by internal developers and/or external partners communicate with multiple of our APIs.
 
