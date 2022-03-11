@@ -28,7 +28,7 @@ The response body should contain two properties:
 
 These properties are based on an older verion of the [Hydra Pagination](https://www.w3.org/community/hydra/wiki/Pagination) draft. We don't necessarily want to follow this standard anymore, but need to keep using these names to maintain backward compatibility on existing APIs.
 
-Example:
+Empty example:
 
 ```json
 {
@@ -36,6 +36,8 @@ Example:
   "member": []
 }
 ```
+
+Example with items: 
 
 ```json
 {

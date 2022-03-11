@@ -16,6 +16,7 @@ This will make it easy to perform the request from the page the visitor is on, o
 
 The following codeblock in the Stoplight editor
 
+<!-- focus: false -->
 ![](../assets/images/http-request-get.png)
 
 becomes 👇
@@ -30,6 +31,7 @@ Accept: application/json
 
 The following codeblock in the Stoplight editor
 
+<!-- focus: false -->
 ![](../assets/images/http-request-post.png)
 
 becomes 👇
@@ -46,6 +48,7 @@ Content-Type: application/json
 
 The following codeblock in the Stoplight editor
 
+<!-- focus: false -->
 ![](../assets/images/http-response.png)
 
 becomes 👇
@@ -63,6 +66,7 @@ The HTTP request maker functionality is documented [in Stoplight's own documenta
 
 For example, to demonstrate how to retrieve an event from UiTdatabank:
 
+<!-- focus: false -->
 ![](../assets/images/http-request-maker.png)
 
 becomes 👇
