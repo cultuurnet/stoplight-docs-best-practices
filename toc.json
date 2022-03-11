@@ -16,11 +16,6 @@
     },
     {
       "type": "item",
-      "title": "Overview",
-      "uri": "docs/api-design.md"
-    },
-    {
-      "type": "item",
       "title": "Authentication",
       "uri": "docs/authentication.md"
     },

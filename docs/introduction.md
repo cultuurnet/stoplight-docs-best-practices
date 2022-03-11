@@ -1,17 +1,21 @@
 # Introduction
 
-Welcome to our internal API design and documentation guidelines! 👋
+Welcome to publiq's API design and documentation guidelines! 👋
 
-This space is meant to share tips and best practices how to design and document your API on Stoplight so that our approach is consistent across projects and as clear as possible for integrators. Click on a guide in the sidebar to find out more about how to take your design and documentation to the next level!
+Our platform is a collection of products like UiTdatabank and UiTPAS, each with their own Application Programming Interfaces (APIs) that enable integrations with external applications as well as our own.
 
-Additionally we also have some pages about creating new Stoplight projects and managing their settings, so that everything works as smoothly as possible for you and everyone helping to document your API.
+## Goal
 
-Enjoy and go build some great APIs!
+Many of publiq's partners integrate with not only one, but multiple of our APIs. Additionally a lot of our own applications that are built by internal developers and/or external partners communicate with multiple of our APIs.
 
-<!-- theme: success -->
+To **reduce the learning curve of integrators that work with multiple of our APIs**, we have agreed upon some standards for common functionality. These standards make it more predictable how our APIs work (*"learn once, apply everywhere"*). In some cases it might even be possible to re-use existing code for boilerplate functionality like authentication, error handling, etc in an integration.
 
-> **Take your time to go through this documentation.** ☕️ It may seem easier to dive in and start designing and documenting your API as fast as possible, but these guides will ensure that your API is designed and documented in a way that will require far less changes down the line to make it production-ready.
+Additionally, they **speed up development of our APIs** by reducing the time spent on bikeshedding over design decisions per API.
 
-<!-- theme: info -->
+## Why do we not use standard *x*?
 
-> **Did you spot a mistake? Do you have questions or suggestions?** 💬 Do not hesitate to contact bert@publiq.be, the owner of the Stoplight tool at publiq, via email or Slack.
+We try to follow industry standards where possible, but sometimes there are competing standards, or we have to deviate due to backward-compatibility reasons so we can align existing APIs with these standards.
+
+## Why does API *x* not follow the standards?
+
+Some APIs were built before these standards were agreed upon. When we add new standards, we try to look at existing APIs and make sure they are compatible with them or can be made compatible with them without too much effort. However this is not always possible, or the compatibility has yet to be added.
