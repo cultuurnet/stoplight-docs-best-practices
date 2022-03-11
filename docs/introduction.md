@@ -10,6 +10,8 @@ To **reduce the learning curve of integrators that work with multiple of our API
 
 Additionally, they **speed up development of our APIs** by reducing the time spent on bikeshedding over design decisions per API.
 
+Last but not least, a common approach for every API makes it possible to **provide generic tooling** that can be re-used for every API, like https://postman.publiq.be.
+
 ## Why do we not use standard *x*?
 
 We try to follow industry standards where possible, but sometimes there are competing standards, or we have to deviate due to backward-compatibility reasons so we can align existing APIs with these standards.
