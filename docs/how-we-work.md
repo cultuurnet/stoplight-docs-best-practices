@@ -46,6 +46,8 @@ Often this is implemented by discussing the required functionality first in a gr
 
 More specifically the OpenAPI contract almost always lives in a git repository, in which a branch gets created for the new functionality. The changes can then be reviewed in a pull request, before they get merged.
 
+Ideally the OpenAPI contract is also used in the actual API for request validation, code generation, ... That way it cannot get out of sync from the actual implementation, because it is a part of the implementation.
+
 ### Automatic tests
 
 \[WIP]
