@@ -35,7 +35,7 @@ The `type` should always start with `https://api.publiq.be/probs`. If the error 
 
 <!-- theme: success -->
 
-> #### Existing types 
+> #### Existing types
 >
 > We have lists with [types for common errors](https://publiq.stoplight.io/docs/errors). These can be used as a fallback when you do not have a more specific type in your own API for a given error.
 >

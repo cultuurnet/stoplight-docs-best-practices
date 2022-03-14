@@ -20,7 +20,7 @@ Always use `GET` for requests that retrieve data, because it is the most optimal
 
 Always use `POST` for requests that create a new resource without a predefined id.
 
-Always use `PUT` for requests that create a resource with a predefined id, or for requests that update resources _completely_ by their id. The id must in both cases be specified in the URL. The URL should be the same for the create and update. The API should just check if the resource exists already and if so update it, or otherwise create it.
+Always use `PUT` for requests that create a resource with a predefined id, or for requests that update resources *completely* by their id. The id must in both cases be specified in the URL. The URL should be the same for the create and update. The API should just check if the resource exists already and if so update it, or otherwise create it.
 
 Always use `PATCH` for requests that update resources partially by their id. The id must be specified in the URL.
 

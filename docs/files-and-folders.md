@@ -45,4 +45,5 @@ The filenames of your images should also be structured as **URL slugs**, so `goo
 If you follow the tips above, you should end up with a file structure that looks like this:
 
 <!-- focus: false -->
+
 ![Example file structure](../assets/images/files-and-folders-structure-example.png)

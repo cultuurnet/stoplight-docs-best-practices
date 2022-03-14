@@ -33,19 +33,19 @@ Examples of acceptable exceptions include endpoints like `/user` that provide in
 
 To validate a token, check that:
 
--   The signature can be verified with the public key of our Auth0 tenant
--   The `nbf` claim is in the past
--   The `exp` claim is **not** in the past
--   The `aud` claim is equal to `https://api.publiq.be`
--   The `iss` claim is equal to either (depending on what environment your API is running on):
-    -   `https://account.uitid.be/`
-    -   `https://account-test.uitid.be/`
-    -   `https://account-acc.uitid.be/`
--   The `https://publiq.be/publiq-apis` claim is present and contains a value representing your api
+*   The signature can be verified with the public key of our Auth0 tenant
+*   The `nbf` claim is in the past
+*   The `exp` claim is **not** in the past
+*   The `aud` claim is equal to `https://api.publiq.be`
+*   The `iss` claim is equal to either (depending on what environment your API is running on):
+    *   `https://account.uitid.be/`
+    *   `https://account-test.uitid.be/`
+    *   `https://account-acc.uitid.be/`
+*   The `https://publiq.be/publiq-apis` claim is present and contains a value representing your api
 
 If the token has an invalid signature, is not usable yet, is expired, or has an invalid `aud` or `iss` claim you should return a [401 error (see authentication docs)](https://publiq.stoplight.io/docs/authentication/docs/errors.md#unauthorized)
 
-If the token is not usable on your API, you should return a [403 error (see authentication docs)](https://publiq.stoplight.io/docs/authentication/docs/errors.md#forbidden). (The difference with the other checks being that the token is valid on _some_ of our APIs, but forbidden on your specific API.)
+If the token is not usable on your API, you should return a [403 error (see authentication docs)](https://publiq.stoplight.io/docs/authentication/docs/errors.md#forbidden). (The difference with the other checks being that the token is valid on *some* of our APIs, but forbidden on your specific API.)
 
 The value of the `https://publiq.be/publiq-apis` claim is the same as the one in the client metadata of the client that requested the token. For example:
 
@@ -80,18 +80,17 @@ If you want to give this decision making to the end-users of your API, you can u
 
 Suitable (fictional) examples of scopes could be:
 
--   Reading a user's events (`events:read`)
--   Updating a user's events (`events:update`)
--   Deleting a user's events (`events:delete`)
--   Reading a user's recommendations (`recommendations:read`)
--   Reading a user's likes (`likes:read`)
--   Updating a user's likes (`likes:update`)
--   Reading a user's newsletter subscriptions (`newsletters:read`)
--   Updating a user's newsletter subscriptions (`newsletters:update`)
+*   Reading a user's events (`events:read`)
+*   Updating a user's events (`events:update`)
+*   Deleting a user's events (`events:delete`)
+*   Reading a user's recommendations (`recommendations:read`)
+*   Reading a user's likes (`likes:read`)
+*   Updating a user's likes (`likes:update`)
+*   Reading a user's newsletter subscriptions (`newsletters:read`)
+*   Updating a user's newsletter subscriptions (`newsletters:update`)
 
-> At the time of writing, no publiq APIs actually use scopes yet for this purpose. Only consider using scopes if granular access to a user's resources is required, _and_ the user needs to be able to grant them themself.
+> At the time of writing, no publiq APIs actually use scopes yet for this purpose. Only consider using scopes if granular access to a user's resources is required, *and* the user needs to be able to grant them themself.
 
 <!-- theme: danger -->
 
 > Do not use scopes for determining API access as we did in the past. While this was [suggested by Auth0](https://community.auth0.com/t/access-tokens-with-multiple-audiences/9911), this approach is not suited for our APIs because we want to control which client has access to which API ourselves. This decision should not be made by our end-users.
-
