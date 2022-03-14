@@ -90,6 +90,6 @@ This is the last step in the process, because when the API is still being implem
 
 ### 5. Repeat
 
-The design-first approach is iterative. While existing functionality cannot be changed to avoid breaking compatibility with existing integrations
+The design-first approach is iterative. While existing features cannot be changed to avoid breaking compatibility with existing integrations, new functionality can always be added by following the same four steps as above.
 
 After you have reached this step, every step should be followed again in the same order for new features.
