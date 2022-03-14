@@ -3,7 +3,7 @@
 <!-- theme: info -->
 
 > APIs should support the authentication methods described in the [authentication docs](https://publiq.stoplight.io/docs/authentication). Read those first to see how they should work from an integrator's perspective.
-> 
+>
 > This page gives some more info how those authentication mechanisms should be implemented on the API.
 
 ## Client identification guidelines
@@ -92,5 +92,3 @@ Third-party clients on the other hand can also request whatever scopes they like
 So for third-party API clients we would also not be able to control who can access what, since it will be up to the end-users to grant this access.
 
 Instead, verify if a token has access to your API using the `https://publiq.be/publiq-apis` claim as documented in the [Token Guidelines](#token-guidelines) above. More specific permissions like what actions the token can actually perform or what resources they can access should be managed inside your API itself.
-
-
