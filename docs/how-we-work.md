@@ -21,6 +21,14 @@ To tackle the problems that come with a code-first approach, we have adopted a d
 
 While every team that builds an API is free to implement this how they see fit, our design-first approach centers around a few key principles.
 
+<p align="center">
+
+<!-- focus: false -->
+
+![](../assets/images/openapi.png)
+
+</p>
+
 ### OpenAPI contracts
 
 Before a single line of code gets written, an [OpenAPI](https://www.openapis.org/) contract has to be created and reviewed by all stakeholders.
