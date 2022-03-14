@@ -1,12 +1,11 @@
 # CORS
 
-Because we spend a lot of time debugging CORS issues between frontends and our APIs, every API should respond with the following headers to `OPTIONS` requests:
+Because we spend a lot of time debugging CORS issues between frontends and our APIs, and it is practically impossible to maintain a complete list of allowed origins on all of our APIs, every API should respond with the following headers to `OPTIONS` requests:
 
-    Access-Control-Allow-Origin: *
-
-    Access-Control-Allow-Headers: <echo back headers in Access-Control-Request-Headers header from request>
-
-    Allow: <echo back Access-Control-Request-Method header from request>
+- `Allow`: Send back all methods that are supported for the requested URL, or `GET,POST,PUT,PATCH,DELETE`
+- `Access-Control-Allow-Methods`: Same as `Allow`.
+- `Access-Control-Allow-Origin`: Echo back the value of the `Origin` header from the request. If not present in the request, send back `*`.
+- `Access-Control-Allow-Headers`: Echo back the values in  the `Access-Control-Request-Headers` header from the request. If not present in the request, send back a list of default headers that are supported.
 
 This way, CORS requests are allowed from every origin for every HTTP method and for every HTTP header, except for cookies and other authorization headers like basic username and password.
 
