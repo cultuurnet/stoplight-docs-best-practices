@@ -67,15 +67,6 @@
       "type": "item",
       "title": "Documenting HTTP examples",
       "uri": "docs/http-examples.md"
-    },
-    {
-      "type": "divider",
-      "title": "Stoplight Management"
-    },
-    {
-      "type": "item",
-      "title": "Creating a Stoplight project",
-      "uri": "docs/creating-a-stoplight-project.md"
     }
   ]
 }
