@@ -4,6 +4,10 @@ Welcome to publiq's API design and documentation guidelines! 👋
 
 This space is meant to share best practices that should be followed for every API that is developed within our organization.
 
+If you are instead looking to integrate with one of our APIs, take a look at [our other API docs](https://docs.publiq.be/)!
+
+## Goal
+
 Many of publiq's partners integrate with not only one, but multiple of our APIs. Additionally a lot of our own applications that are built by internal developers and/or external partners communicate with multiple of our APIs.
 
 To **reduce the learning curve of integrators that work with multiple of our APIs**, we have agreed upon some standards for common functionality. These standards make it more predictable how our APIs work (*"learn once, apply everywhere"*). In some cases it might even be possible to re-use existing code for boilerplate functionality like authentication, error handling, etc in an integration.
