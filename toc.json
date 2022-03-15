@@ -21,11 +21,6 @@
     },
     {
       "type": "item",
-      "title": "CORS",
-      "uri": "docs/cors.md"
-    },
-    {
-      "type": "item",
       "title": "Permissions",
       "uri": "docs/permissions.md"
     },
@@ -36,11 +31,6 @@
     },
     {
       "type": "item",
-      "title": "Errors",
-      "uri": "docs/errors.md"
-    },
-    {
-      "type": "item",
       "title": "Pagination",
       "uri": "docs/pagination.md"
     },
@@ -48,6 +38,16 @@
       "type": "item",
       "title": "Sorting",
       "uri": "docs/sorting.md"
+    },
+    {
+      "type": "item",
+      "title": "Errors",
+      "uri": "docs/errors.md"
+    },
+    {
+      "type": "item",
+      "title": "CORS",
+      "uri": "docs/cors.md"
     },
     {
       "type": "divider",
