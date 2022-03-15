@@ -12,10 +12,6 @@ This way, CORS requests are allowed from every origin for every HTTP method and 
 
 The `Authorization` header used to include a token in API requests is allowed with this approach.
 
-## How to implement
-
-At the time of writing every API should implement this logic itself. However we are looking into a solution to provide this for every API automatically so it doesn't need to be re-implemented constantly.
-
 ## Security implications
 
 Because our APIs are not running on an intranet or using cookies, we can safely allow every possible origin in CORS requests.
