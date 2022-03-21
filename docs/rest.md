@@ -10,7 +10,7 @@ This page includes a brief summary of the most important points of the REST arch
 
 ## HTTP
 
-REST APIs that work over HTTP must follow the [HTTP specifications](https://developer.mozilla.org/en-US/docs/Web/HTTP/Resources_and_specifications) as closely as possible. 
+REST APIs that work over HTTP must follow the [HTTP specifications](https://developer.mozilla.org/en-US/docs/Web/HTTP/Resources_and_specifications) as closely as possible.
 
 This way each API is ensured to work correctly with generic infrastructure like proxies, load balancers, and generic HTTP libraries in client apps.
 
@@ -48,18 +48,18 @@ Resources can also contain sub-collections. For example `https://api.ecma.org/us
 
 Contrary to popular belief, the REST architecture does not dictate how URLs must be named or structured. It only specifies that the URL is always the **complete identifier** of a resource. As such, the following rules apply:
 
-- **Query parameters must not be used to transfer new/updated data!** Query parameters, if used, are always part of the identifier of a resource.
-- **URLs must not contain verbs to specify what action is being performed.** URLs are used to indentify resources, not actions. Instead HTTP methods must be used.
+*   **Query parameters must not be used to transfer new/updated data!** Query parameters, if used, are always part of the identifier of a resource.
+*   **URLs must not contain verbs to specify what action is being performed.** URLs are used to indentify resources, not actions. Instead HTTP methods must be used.
 
 While not required by the REST architecture, we have agreed on some additional naming conventions that must always be followed on APIs built by/for publiq to ensure a consistent developer experience:
 
-- URIs must always use `kebab-case`. ([Read why](https://stackoverflow.com/a/18450653/1317044))
-- Collections must be pluralized. For example `/weather-predictions`, `/users`, ...
-- Collections may support query parameters to filter them. For example `/users?postalCode=1000` could be the URI for all users that live in Brussels.
-- Individual resources may use a database ID as part of their URI, but do not need to. If they do, it is advised to not use incremental IDs to avoid "URI guessing", but to use [UUIDs](https://nl.wikipedia.org/wiki/Universally_unique_identifier) instead. For example `/users/foo` may be used for the user with username `foo`, or `/users/550e8400-e29b-41d4-a716-446655440000` for the user with the database ID `550e8400-e29b-41d4-a716-446655440000`.
-- Individual resources inside a collection must be prefixed with that collection's URI, as seen in the examples above.
-- Individual resources may be a singular if only one instance exists. For example `/user` for the current user, or `/cities/brussels/weather` for the weather in Brussels.
-- Individual resources may support or even require query parameters as part of their URI. For example `/points?uitpasNumber=1234567890123` could be the URI to get the points for the UiTPAS with number `1234567890123`. However, preference is given to a structure like `/uitpasNumbers/1234567890123/points` instead when possible.
+*   URIs must always use `kebab-case`. ([Read why](https://stackoverflow.com/a/18450653/1317044))
+*   Collections must be pluralized. For example `/weather-predictions`, `/users`, ...
+*   Collections may support query parameters to filter them. For example `/users?postalCode=1000` could be the URI for all users that live in Brussels.
+*   Individual resources may use a database ID as part of their URI, but do not need to. If they do, it is advised to not use incremental IDs to avoid "URI guessing", but to use [UUIDs](https://nl.wikipedia.org/wiki/Universally_unique_identifier) instead. For example `/users/foo` may be used for the user with username `foo`, or `/users/550e8400-e29b-41d4-a716-446655440000` for the user with the database ID `550e8400-e29b-41d4-a716-446655440000`.
+*   Individual resources inside a collection must be prefixed with that collection's URI, as seen in the examples above.
+*   Individual resources may be a singular if only one instance exists. For example `/user` for the current user, or `/cities/brussels/weather` for the weather in Brussels.
+*   Individual resources may support or even require query parameters as part of their URI. For example `/points?uitpasNumber=1234567890123` could be the URI to get the points for the UiTPAS with number `1234567890123`. However, preference is given to a structure like `/uitpasNumbers/1234567890123/points` instead when possible.
 
 > As mentioned above, URIs may contain internal database IDs. However it is important to keep in mind that while your API may use database IDs internally, the ID of a resource on an API is always its URI.
 
@@ -67,13 +67,13 @@ While not required by the REST architecture, we have agreed on some additional n
 
 Every resource must support one or more HTTP methods, which indicate the action that should be performed on the resource.
 
-While the HTTP specifications allows for custom methods, publiq APIs must never use custom methods to ensure compatibility with generic HTTP tooling. 
+While the HTTP specifications allows for custom methods, publiq APIs must never use custom methods to ensure compatibility with generic HTTP tooling.
 
 APIs built by/for publiq must always use the following methods, and respect their documented behaviour.
 
 **POST**
 
-The `POST` method is used to send data to the API. It is most often used to _create_ new resources in a collection.
+The `POST` method is used to send data to the API. It is most often used to *create* new resources in a collection.
 
 For example, `POST https://io.uitdatabank.be/events` creates a new event in UiTdatabank.
 
@@ -95,19 +95,19 @@ If you have a scenario in which an API client needs to retrieve a resource and a
 
 **PUT**
 
-Like the `POST` method, the `PUT` method is used to send data to the API. 
+Like the `POST` method, the `PUT` method is used to send data to the API.
 
-In most cases `PUT` is used to _update_ existing resources. 
+In most cases `PUT` is used to *update* existing resources.
 
 For example `PUT https://io.uitdatabank.be/events/550e8400-e29b-41d4-a716-446655440000` updates a single event with that specific URL in UiTdatabank.
 
 Contrary to `POST` requests, `PUT` requests **must** always be [idempotent](https://developer.mozilla.org/en-US/docs/Glossary/Idempotent). This means that the same request can be repeated multiple times and will each time have the same result as if the request was only made once, without any side-effects. For updates, this is normally not an issue.
 
-However `PUT` requests _can_ also be used to create new resources. However in the case of `PUT` requests idempotence **must** be guaranteed, so you cannot support a request like `PUT /events` to create a new event, since that cannot be idempotent without explicitly using an `Idempotency-Key` header.
+However `PUT` requests *can* also be used to create new resources. However in the case of `PUT` requests idempotence **must** be guaranteed, so you cannot support a request like `PUT /events` to create a new event, since that cannot be idempotent without explicitly using an `Idempotency-Key` header.
 
-It can however be used for resources with ids that can be provided by the API client itself. For example: `PUT https://io.uitdatabank.be/events/550e8400-e29b-41d4-a716-446655440000` _could_ create a new event with this URL if one does not exist yet, as long as the API accepts this as a valid id. And if the request is repeated the result will be the same, because the previously created event will be "updated" but without any changes.
+It can however be used for resources with ids that can be provided by the API client itself. For example: `PUT https://io.uitdatabank.be/events/550e8400-e29b-41d4-a716-446655440000` *could* create a new event with this URL if one does not exist yet, as long as the API accepts this as a valid id. And if the request is repeated the result will be the same, because the previously created event will be "updated" but without any changes.
 
-It can also be used to create a new resource if that resource is a singleton with a fixed URL. For example if an event with the URL `https://io.uitdatabank.be/events/550e8400-e29b-41d4-a716-446655440000` already exists, the API could support a request like `PUT https://io.uitdatabank.be/events/550e8400-e29b-41d4-a716-446655440000/price-info` to create _or_ update the price info for that event. Since an event can only have one price info resource, it will be idempotent since it will be idempotent because the request will either create _or_ update the same resource, without any side effects (like creating an extra price info resource).
+It can also be used to create a new resource if that resource is a singleton with a fixed URL. For example if an event with the URL `https://io.uitdatabank.be/events/550e8400-e29b-41d4-a716-446655440000` already exists, the API could support a request like `PUT https://io.uitdatabank.be/events/550e8400-e29b-41d4-a716-446655440000/price-info` to create *or* update the price info for that event. Since an event can only have one price info resource, it will be idempotent since it will be idempotent because the request will either create *or* update the same resource, without any side effects (like creating an extra price info resource).
 
 **PATCH**
 
@@ -133,7 +133,7 @@ APIs built by/for publiq **must** return a `2XX` response code if a `DELETE` is 
 
 When creating, retrieving or updating a resource the resource's data must always be represented in some way.
 
-While [JSON](https://www.json.org/json-en.html) is the popular format to use for this, it is important to remember that JSON is merely a _representation_ of the data. It can be stored in many different ways internally, and also be shared in many different formats.
+While [JSON](https://www.json.org/json-en.html) is the popular format to use for this, it is important to remember that JSON is merely a *representation* of the data. It can be stored in many different ways internally, and also be shared in many different formats.
 
 Even if the data is also stored as JSON internally, the structure of that JSON can be different internally compared to the API.
 

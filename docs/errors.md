@@ -174,7 +174,7 @@ For example:
 }
 ```
 
-If the error occured when the API was acting as a **gateway or proxy to another HTTP server**, `502` (`Bad Gateway`) _may_ be used instead. Note that this does not apply to a database or other non-HTTP dependency being down.
+If the error occured when the API was acting as a **gateway or proxy to another HTTP server**, `502` (`Bad Gateway`) *may* be used instead. Note that this does not apply to a database or other non-HTTP dependency being down.
 
 ```json
 {
