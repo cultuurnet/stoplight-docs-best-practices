@@ -10,9 +10,9 @@ This space is meant to share best practices that should be followed for every AP
 
 Many of publiq's partners integrate with not only one, but multiple of our APIs. Additionally a lot of our own applications that are built by either internal or external developers communicate with multiple of our APIs.
 
-To **reduce the learning curve of integrators that work with multiple of our APIs**, we have agreed upon some standards for common functionality. These standards make it more predictable how our APIs work (*"learn once, apply everywhere"*). In some cases it might even be possible to re-use existing code for boilerplate functionality like authentication, error handling, etc in an integration.
+To **reduce the learning curve of integrators that work with multiple of our APIs**, we have agreed upon some standards for common functionality. These standards make it more predictable how our APIs work (*"learn once, apply everywhere"*). In some cases it might even be possible to re-use existing code for boilerplate functionality like authentication, error handling, and so on in an integration.
 
-Additionally, they **speed up development of our APIs** by reducing the time spent on bikeshedding over design decisions per API.
+They also **speed up development of our APIs** by reducing the time spent on bikeshedding over design decisions per API.
 
 Last but not least, a common approach for every API makes it possible to **provide generic tooling** that can be re-used for every API, like https://postman.publiq.be.
 
