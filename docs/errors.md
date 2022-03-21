@@ -2,7 +2,7 @@
 
 <!-- theme: info -->
 
-> APIs should support the errors described in the [general errors docs](https://publiq.stoplight.io/docs/errors) and [authentication error docs](https://docs.publiq.be/docs/authentication/ZG9jOjMyMzA0Mw-errors). Read those first to see how they should work from an integrator's perspective.
+> APIs must support the errors described in the [errors docs](https://publiq.stoplight.io/docs/errors) and [authentication error docs](https://docs.publiq.be/docs/authentication/ZG9jOjMyMzA0Mw-errors) for integrators. Read those first to see how they should work from an integrator's perspective.
 >
 > This page gives more info when to use which error type, and when/how to create custom error types for your API.
 
@@ -151,9 +151,35 @@ When creating your own error types, the following rules apply:
 *   The slugs of your errors must always be in `kebab-case` (lowercase, and hyphens for spaces).
 *   An `errors.md` page should be added to your project's documentation (on Stoplight) to provide extra documentation per error type. A redirect will be set up so that your domain error types link to this page.
 
+Domain errors should in most cases use the `400` response status, but other status codes may be more applicable in some scenarios like for example `403`. When picking a status code, make sure to read about its intended usage in the list of [client error codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses). Sometimes the name of a certain code may look applicable, but it might not actually be intended for your specific use case and can be confusing for integrators or tools who follow the HTTP specifications.
+
 Examples of domain errors:
 
 *   https://api.publiq.be/probs/uitdatabank/calendar-type-not-supported
 *   https://api.publiq.be/probs/uitpas/invalid-uitpas-number
 
 Read more examples of [domain errors in UiTdatabank](https://docs.publiq.be/docs/uitdatabank/ZG9jOjMyMzA0Mw-errors).
+
+### For internal server errors
+
+Always use `500`, `Internal Server Error` (as title) and `about:blank` (as type) for internal server errors that can not be fixed by the API client by modifying its HTTP request. Avoid additional details that may expose implementation details to avoid security details leaking.
+
+For example:
+
+```json
+{
+  "type": "about:blank",
+  "title": "Internal Server Error",
+  "status": "500"
+}
+```
+
+If the error occured when the API was acting as a **gateway or proxy to another HTTP server**, `502` (`Bad Gateway`) _may_ be used instead. Note that this does not apply to a database or other non-HTTP dependency being down.
+
+```json
+{
+  "type": "about:blank",
+  "title": "Bad Gateway",
+  "status": "502"
+}
+```
