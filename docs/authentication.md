@@ -2,11 +2,13 @@
 
 <!-- theme: info -->
 
-> APIs should support one or more of the authentication methods described in the [authentication docs](https://publiq.stoplight.io/docs/authentication). Read those first to see how they should work from an integrator's perspective.
+> APIs should support one or more of the authentication methods described in the [authentication docs](https://publiq.stoplight.io/docs/authentication). **Read those first** to see how they should work from an integrator's perspective, and **how to pick the right authentication mechanism(s) for your API**.
 >
 > This page gives some more info how those authentication mechanisms should be implemented on the API.
 
 ## Client identification guidelines
+
+*   Read [how client identification must work from an integrator's perspective](https://publiq.stoplight.io/docs/authentication/ZG9jOjExODE5NDY5-client-identification).
 
 When using client identification, APIs should support both the `x-client-id` header and `clientId` URL query parameter. If both are provided, preference should be given to the header.
 
@@ -31,6 +33,9 @@ The above example indicates that the client has access to UiTdatabank's Search A
 > We use very short names for the APIs in the client metadata, because the `publiq-apis` property is limited to 255 characters. We also cannot use multiple properties because the metadata is limited to 10 properties.
 
 ## Token guidelines
+
+*   Read [how client access tokens must work from an integrator's perspective](https://publiq.stoplight.io/docs/authentication/ZG9jOjExODE5NDY4-client-access-token).
+*   Read [how user access tokens must work from an integrator's perspective](https://publiq.stoplight.io/docs/authentication/ZG9jOjExODE5NTM5-user-access-token).
 
 When using tokens, endpoints should support both client and user access tokens wherever possible.
 
