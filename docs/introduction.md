@@ -4,7 +4,7 @@ Welcome to publiq's API design and documentation guidelines! 👋
 
 This space is meant to share best practices that should be followed for every API that is developed within our organization.
 
-If you are instead looking to integrate with one of our APIs, take a look at [our other API docs](https://docs.publiq.be/)!
+> If you are instead **looking to integrate with one of our APIs**, take a look at our **[API docs](https://docs.publiq.be/)**!
 
 ## Goal
 
