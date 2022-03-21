@@ -48,25 +48,6 @@
       "type": "item",
       "title": "CORS",
       "uri": "docs/cors.md"
-    },
-    {
-      "type": "divider",
-      "title": "Writing guides"
-    },
-    {
-      "type": "item",
-      "title": "Files and folders",
-      "uri": "docs/files-and-folders.md"
-    },
-    {
-      "type": "item",
-      "title": "Customizing the sidebar",
-      "uri": "docs/customizing-the-sidebar.md"
-    },
-    {
-      "type": "item",
-      "title": "Documenting HTTP examples",
-      "uri": "docs/http-examples.md"
     }
   ]
 }
