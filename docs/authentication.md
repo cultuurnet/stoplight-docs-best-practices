@@ -2,7 +2,7 @@
 
 <!-- theme: info -->
 
-> APIs should support the authentication methods described in the [authentication docs](https://publiq.stoplight.io/docs/authentication). Read those first to see how they should work from an integrator's perspective.
+> APIs should support one or more of the authentication methods described in the [authentication docs](https://publiq.stoplight.io/docs/authentication). Read those first to see how they should work from an integrator's perspective.
 >
 > This page gives some more info how those authentication mechanisms should be implemented on the API.
 
