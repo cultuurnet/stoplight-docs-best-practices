@@ -60,8 +60,10 @@ While not required by the REST architecture, we have agreed on some additional n
 *   Individual resources inside a collection must be prefixed with that collection's URI, as seen in the examples above.
 *   Individual resources may be a singular if only one instance exists. For example `/user` for the current user, or `/cities/brussels/weather` for the weather in Brussels.
 *   Individual resources may support or even require query parameters as part of their URI. For example `/points?uitpasNumber=1234567890123` could be the URI to get the points for the UiTPAS with number `1234567890123`. However, preference is given to a structure like `/uitpasNumbers/1234567890123/points` instead when possible.
+*   Query parameters must always be in `lowerCamelCase`.
+*   URLs must always work without `/` at the end. APIs may optionally support trailing slashes, as if the URL has no trailing slash. Alternatively a `404` error may be returned if a trailing slash is used but not supported.
 
-> As mentioned above, URIs may contain internal database IDs. However it is important to keep in mind that while your API may use database IDs internally, the ID of a resource on an API is always its URI.
+> As mentioned above, URIs may contain internal database IDs. However it is important to keep in mind that while your API may use database IDs internally, **the URI of a resource is always its ID on an API**.
 
 ## HTTP methods
 
