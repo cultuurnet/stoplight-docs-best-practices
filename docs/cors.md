@@ -1,6 +1,6 @@
 # CORS
 
-Because we spend a lot of time debugging CORS issues between frontends and our APIs, and it is practically impossible to maintain a complete list of allowed origins on all of our APIs, every API should respond with the following headers to `OPTIONS` requests:
+Because we spend a lot of time debugging CORS issues between frontends and our APIs, and it is practically impossible to maintain a complete list of allowed origins on all of our APIs, every API must respond with the following headers to `OPTIONS` requests:
 
 *   `Allow`: Send back all methods that are supported for the requested URL, or `GET,POST,PUT,PATCH,DELETE`
 *   `Access-Control-Allow-Methods`: Same as `Allow`.
