@@ -41,6 +41,11 @@
     },
     {
       "type": "item",
+      "title": "Date & time info",
+      "uri": "docs/dates.md"
+    },
+    {
+      "type": "item",
       "title": "Errors",
       "uri": "docs/errors.md"
     },
